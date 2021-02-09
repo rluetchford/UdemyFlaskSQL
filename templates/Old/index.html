@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Index1</title>
+    </head>
+    <body>
+        <h1>Hello World!</h1>
+        {% if quote %}
+        <h2>{{ quote }}</h2>
+        {% else %}
+        <h2>No variable quote here...</h2>
+        {% endif %}
+        <h2>My favourite fruits are:</h2>
+        <ul>
+            {% for fruit in fruits %}
+            <li>
+                {{ fruit }}
+            </li>
+            {% endfor %}
+        </ul>
+    </body>
+</html>
